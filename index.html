@@ -7,13 +7,34 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script src='script.js' defer></script>
 	<title>Lab 04</title>
-	<!-- <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet"> -->
+	<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 </head>
 
-<body>
-	<h1>Minimal Todo List</h1>
-	<input  type='text'>
-	<button>+</button>
+<body class="bg-blue-200 grid grid-cols-3">
+	<!-- images -->
+	<div class="col-start-1">
+		<img class="fixed h-full" style="z-index: -1; top:0px" src="./images/yeji.jpg" width="480px">
+	</div>
+	<div class="col-start-3 mx-8">
+		<img class="col-start-3 fixed" style="z-index: -1; top:0px" src="./images/yeji2.jpg" width="480px">
+	</div>
+
+	<!-- to do list -->
+	<div class="col-start-2 flex justify-center mt-5">
+		<h1>Minimal Todo List</h1>
+	</div>
+	<div class="col-start-2 flex justify-center p-2 space-x-2">
+		<input type='text'>
+		<button class="bg-white p-1">+</button>
+	</div>
+	<div id="center" class="col-start-2 justify-center">
+
+	</div>
+
+	<div id="done" class="col-start-2 justify-center">
+
+	</div>
+
 </body>
 
 </html>
